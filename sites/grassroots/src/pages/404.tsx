@@ -4,14 +4,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import abductionIllustration from "../images/abduction-illustration.svg";
 
-import Test from "@denistsoi/react-ui";
-
 function NotFoundPage() {
   return (
     <Layout>
       <SEO title="404: Not found" />
 
-      <Test tailwindcss="bg-blue-500" />
       <div>
         <img
           alt="Ghost getting abducted by aliens"

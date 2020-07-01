@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
-import Test from "@denistsoi/react-ui";
+import { Header, Test } from "@denistsoi/react-ui";
 
 function IndexPage() {
   return (
@@ -14,7 +14,8 @@ function IndexPage() {
         title="Home"
       />
 
-      <Test tailwindcss="bg-blue-500" />
+      <Test tailwind="bg-blue-500" />
+      <Header tailwind="bg-red-500" />
 
       <section className="text-center">
         <img
