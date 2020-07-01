@@ -1,0 +1,23 @@
+{
+  "name": "@denistsoi/react-ui",
+  "version": "1.0.0",
+  "description": "A React UI",
+  "main": "lib/index.tsx",
+  "scripts": {
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+  },
+  "author": "Denis Tsoi <denistsoi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1"
+  }
+}
