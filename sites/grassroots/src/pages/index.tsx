@@ -58,7 +58,7 @@ function IndexPage({ data }) {
             <p className="py-2">
               <a
                 className="underline text-blue-700"
-                href="www.tableoftwocities.org"
+                href="https://www.tableoftwocities.org"
               >
                 Through Table of Two Cities
               </a>
