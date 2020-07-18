@@ -8,9 +8,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-1 flex-wrap mx-auto">
-        {children}
-      </main>
+      <main className="flex-1 flex-wrap">{children}</main>
     </div>
   );
 }

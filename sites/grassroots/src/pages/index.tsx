@@ -1,11 +1,14 @@
 import React from "react";
 
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import "./style.css";
 
-function IndexPage() {
+function IndexPage({ data }) {
   return (
     <Layout>
       <SEO
@@ -13,7 +16,8 @@ function IndexPage() {
         title="Home"
       />
 
-      <img src="./demonstration.jpg" />
+      <Img fluid={data?.file?.childImageSharp?.fluid} />
+
       {/* Summary */}
       <article className="px-4 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
         <section className="py-4">
@@ -88,5 +92,16 @@ function IndexPage() {
     </Layout>
   );
 }
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "featured/demonstration.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1440) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

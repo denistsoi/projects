@@ -1,6 +1,6 @@
 const resolveConfig = require("tailwindcss/resolveConfig");
 const tailwindConfig = require("./tailwind.config.js");
-
+const path = require("path");
 const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        theme_color: fullConfig.theme.colors.green["900"],
         display: `minimal-ui`,
         icon: ``,
       },
@@ -36,9 +36,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     `gatsby-plugin-offline`,
-    // `gatsby-transformer-sharp`, 
-    // `gatsby-plugin-sharp`
-
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 };
