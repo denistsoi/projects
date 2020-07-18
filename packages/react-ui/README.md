@@ -2,7 +2,7 @@
 
 ## Description
 
-A reusable ui kit withing the react monorepo
+A reusable ui kit within the react monorepo
 
 ## Author
 
