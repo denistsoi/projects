@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Grassroots Future`,
+    description: `Grassroots Future looks at empowering grassroots movements and advocacy in the refugee and asylum seeker community`,
+    author: `@denistsoi`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -21,7 +21,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.teal["400"],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: ``,
       },
     },
     {
@@ -37,5 +37,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    // `gatsby-transformer-sharp`, 
+    // `gatsby-plugin-sharp`
+
   ],
 };
