@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "author": "Denis Tsoi <denistsoi@gmail.com>",
   "dependencies": {
-    "@denistsoi/react-ui": "1.0.0",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.0.0",
     "gatsby": "2.23.11",

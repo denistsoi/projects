@@ -1,7 +1,7 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
-const path = require("path");
-const fullConfig = resolveConfig(tailwindConfig);
+const resolveConfig = require("tailwindcss/resolveConfig")
+const tailwindConfig = require("./tailwind.config.js")
+const path = require("path")
+const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
@@ -21,7 +21,6 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["900"],
         display: `minimal-ui`,
-        icon: ``,
       },
     },
     {
@@ -47,4 +46,4 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
-};
+}

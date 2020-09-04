@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import "./style.css";
+import "./style.css"
 
-function IndexPage({ data }) {
+function IndexPage({ data }: any) {
   return (
     <Layout>
       <SEO
@@ -90,7 +90,7 @@ function IndexPage({ data }) {
         </div>
       </footer>
     </Layout>
-  );
+  )
 }
 export const query = graphql`
   query {
@@ -102,6 +102,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage
