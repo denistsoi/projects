@@ -1,12 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 const Contact = () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Contact" />
 
       <div className="py-2">
         <p className="py-2">
