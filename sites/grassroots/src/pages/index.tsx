@@ -1,20 +1,30 @@
 import React from "react"
 
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img, { FluidObject } from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-function IndexPage({ data }: any) {
+interface IndexProps {
+  data?: {
+    file?: {
+      childImageSharp?: {
+        fluid: FluidObject
+      }
+    }
+  }
+}
+
+const IndexPage: React.FC<IndexProps> = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
 
-      {/* <Img fluid={data?.file?.childImageSharp?.fluid} /> */}
+      <Img fluid={data?.file?.childImageSharp?.fluid} />
 
       {/* Summary */}
-      <article className="px-4 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
+      <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
         <section className="py-4">
           <div className="py-2">
             <p className="py-2">
@@ -78,26 +88,20 @@ function IndexPage({ data }: any) {
           </div>
         </section>
       </article>
-      <footer className="bg-green-900 pt-4 pb-8 px-4 lg:px-8 text-white xl:m-auto">
-        <div>
-          Grassroots © 2020. All rights reserved. <br /> Made with ❤️ by Denis
-          Tsoi
-        </div>
-      </footer>
     </Layout>
   )
 }
 
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "featured/demonstration.jpg" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1440) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "featured/demonstration.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1440, maxHeight: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
