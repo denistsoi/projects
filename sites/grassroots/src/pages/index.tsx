@@ -1,12 +1,22 @@
 import React from "react"
 
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img, { FluidObject } from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-function IndexPage({ data }: any) {
+interface IndexProps {
+  data?: {
+    file?: {
+      childImageSharp?: {
+        fluid: FluidObject
+      }
+    }
+  }
+}
+
+const IndexPage: React.FC<IndexProps> = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
@@ -14,7 +24,7 @@ function IndexPage({ data }: any) {
       <Img fluid={data?.file?.childImageSharp?.fluid} />
 
       {/* Summary */}
-      <article className="px-4 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
+      <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
         <section className="py-4">
           <div className="py-2">
             <p className="py-2">
