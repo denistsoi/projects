@@ -6,20 +6,13 @@ Monorepo for sites & packages.
 
 ## Aims
 
-- Consolidate development of components for gatsby/next/vue sites
+- Consolidate development of components for sites
 - Ensure all sites are stored within sites, regardless of frontend framework
 
 ## Project Structure
 
-app/
-  <app:name>          // standalone apps - maybe CRA
-  api/                // apis to be consumed by sites or apps
-packages/             // lerna packages (typically reusable components)
 sites/                // static or next sites
-lerna.json
-package.json
-README.md             
-tailwind.config.js    // tailwind config to use tailwind intellisense in vscode
+README.md             // this
 
 ## Author
 
