@@ -13,8 +13,10 @@ Monorepo for sites & packages.
 
 ```
 sites/                // static or next sites  
-  dtsoi               // dtsoi.com (personal) on vuepress site
+  dtsoi               // dtsoi.com (personal) on vuepress site  
+  erictsoi            // erictsoi.com (personal)   
   grassroots          // grassroots future (nextjs)  
+  template            // scaffold template  
 README.md             // this
 ```
 
