@@ -11,8 +11,12 @@ Monorepo for sites & packages.
 
 ## Project Structure
 
-sites/                // static or next sites
+```
+sites/                // static or next sites  
+  dtsoi               // dtsoi.com (personal) on vuepress site
+  grassroots          // grassroots future (nextjs)  
 README.md             // this
+```
 
 ## Author
 
