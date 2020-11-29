@@ -21,6 +21,7 @@ export default function Home() {
           layout="responsive"
           height={590}
           width={1024}
+          loading="eager"
         />
       </div>
       <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
