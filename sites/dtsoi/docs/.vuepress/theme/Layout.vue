@@ -11,14 +11,12 @@
 import coreheader from "./core/header";
 import Detail from "./layouts/Detail";
 import Home from "./layouts/Home";
-import Template from "./layouts/Template";
 
 export default {
   components: {
     coreheader,
     Detail,
     Home,
-    Template
   },
   computed: {
     layout() {

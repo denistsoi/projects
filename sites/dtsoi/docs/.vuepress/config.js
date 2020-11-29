@@ -83,7 +83,6 @@ module.exports = {
     nav: [
       { text: "cv", link: "/cv/" },
       { text: "refugeek", link: "/rg/" },
-      { text: "templates", link: "/templates/" },
     ],
   },
   markdown: {
