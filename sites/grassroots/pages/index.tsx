@@ -17,11 +17,12 @@ export default function Home() {
 
       <div style={{ maxHeight: "590px", overflow: "hidden" }}>
         <Image
-          src="/demonstration.jpg"
+          src="/demonstration.webp"
           layout="responsive"
           height={590}
           width={1024}
           loading="eager"
+          priority
         />
       </div>
       <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
