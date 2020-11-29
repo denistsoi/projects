@@ -4,7 +4,7 @@ layout: "Detail"
 ---
 
 ::: tip Summary
-Software Developer with 6+ years industry experience.  
+Software Developer with 7+ years industry experience.  
 Formerly Precious Metals Dealer in Hong Kong.  
 Looking for open-minded groups of engineers that **love** to code.  
 :::
@@ -118,21 +118,6 @@ Various
 - Took an interest in programming and enrolled into [General Assembly's Frontend Web Development](#_04-2013-08-2013) first part-time course.  
 
 ## Education
-
-
-### 05/2020
-
-::: job
-Udacity  
-Data Engineer Nanodegree
-:::
-
-- Project 1 - Data Modeling
-- Project 2 - Cloud Data Warehousing
-- Project 3 - Data Lakes with Apache Spark
-- Project 4 - Data Pipelines with Apache Airflow
-- Project 5 - Data Engineering Capstone
-
 
 ### 03/2020 - 05/2020
 

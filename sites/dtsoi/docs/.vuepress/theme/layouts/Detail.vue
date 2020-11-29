@@ -11,6 +11,7 @@
 <script>
 import coreheader from "../core/header";
 import corefooter from "../core/footer";
+
 export default {
   components: {
     coreheader,
