@@ -1,17 +1,19 @@
 import Head from "next/head"
 import Image from "next/image"
 
+import { Config } from "config"
+
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>{Config.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header className="bg-green-900">
         <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
-          <h1 className="text-white flex items-center">Grassroots</h1>
+          <h1 className="text-white flex items-center">{Config.title}</h1>
         </div>
       </header>
 
@@ -89,6 +91,14 @@ export default function Home() {
           </div>
         </section>
       </article>
+
+      <footer className="p-4 bg-green-900 text-white">
+        <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto">
+          <p className="text-white flex items-center text-sm">
+            {Config.footer}
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }
