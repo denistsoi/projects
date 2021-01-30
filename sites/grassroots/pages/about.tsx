@@ -1,30 +1,49 @@
-import { fetchEntries } from "utils/fetchData"
+import Head from "next/head"
+import Image from "next/image"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-const Post = ({ title, ...p }) => (
-  <div>
-    <h2>{title}</h2>
-    <p>{JSON.stringify(p.content)}</p>
-  </div>
-)
+import { Layout } from "@components/Layout"
 
-export default function AboutUs({ posts }) {
+import { fetchEntry } from "utils/fetchData"
+import { Config } from "config"
+
+export default function Home({ page }) {
   return (
     <div>
-      <div>
-        {posts.map((p) => {
-          return <Post key={p.date} title={p.title} {...p} />
-        })}
-      </div>
+      <Head>
+        <title>{Config.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <Layout>
+        {/* <div style={{ maxHeight: "590px", overflow: "hidden" }}>
+          <Image
+            src="/demonstration.webp"
+            layout="responsive"
+            height={590}
+            width={1024}
+            loading="eager"
+            priority
+          />
+        </div> */}
+        <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
+          <section className="py-4">
+            {documentToReactComponents(
+              page.fields.content,
+              Config.contentful.options
+            )}
+          </section>
+        </article>
+      </Layout>
     </div>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetchEntries()
-  const posts = res.map((p) => p.fields)
+  const res = await fetchEntry(process.env.ABOUT_PAGE)
   return {
     props: {
-      posts,
+      page: res,
     },
   }
 }
