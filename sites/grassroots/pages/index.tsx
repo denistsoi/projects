@@ -12,7 +12,12 @@ export default function Home({ page }) {
     <div>
       <Head>
         <title>{Config.title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap"
+        />
       </Head>
 
       <Layout>
@@ -26,7 +31,7 @@ export default function Home({ page }) {
             priority
           />
         </div>
-        <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
+        <article className="px-6 lg:px-8 max-w-4xl items-center justify-center mx-auto">
           <section className="py-4">
             {documentToReactComponents(
               page.fields.content,

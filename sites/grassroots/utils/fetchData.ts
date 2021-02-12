@@ -21,4 +21,4 @@ export async function fetchEntry(entryId) {
   return await client.getEntry(entryId)
 }
 
-export default { fetchEntries }
+export default { fetchEntries, fetchEntry }

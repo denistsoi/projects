@@ -1,9 +1,18 @@
+import Image from "next/image"
 import { Config } from "config"
 
 export const Header = () => (
-  <header className="bg-green-900">
-    <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
-      <h1 className="text-white flex items-center">{Config.title}</h1>
+  <header className="bg-emerald">
+    <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto">
+      <Image
+        src="/logo-dark.png"
+        layout="fixed"
+        height={45}
+        width={158}
+        loading="eager"
+        priority
+        alt={Config.alt.logoName}
+      />
     </div>
   </header>
 )

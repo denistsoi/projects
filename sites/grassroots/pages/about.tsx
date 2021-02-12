@@ -16,16 +16,6 @@ export default function Home({ page }) {
       </Head>
 
       <Layout>
-        {/* <div style={{ maxHeight: "590px", overflow: "hidden" }}>
-          <Image
-            src="/demonstration.webp"
-            layout="responsive"
-            height={590}
-            width={1024}
-            loading="eager"
-            priority
-          />
-        </div> */}
         <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
           <section className="py-4">
             {documentToReactComponents(
