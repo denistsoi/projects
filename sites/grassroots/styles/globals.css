@@ -13,3 +13,12 @@ p,
 span {
   font-family: "Nunito", sans-serif;
 }
+
+.image-container {
+  max-height: 280px;
+}
+
+.image-container > img {
+  margin: 0 auto;
+  height: 100px;
+}

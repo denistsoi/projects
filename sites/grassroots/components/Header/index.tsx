@@ -3,7 +3,7 @@ import { Config } from "config"
 
 export const Header = () => (
   <header className="bg-emerald">
-    <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto">
+    <div className="flex flex-wrap items-center justify-between max-w-4xl p-6 mx-auto">
       <Image
         src="/logo-dark.png"
         layout="fixed"

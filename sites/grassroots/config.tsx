@@ -1,4 +1,5 @@
 import { BLOCKS, INLINES } from "@contentful/rich-text-types"
+import Image from "next/image"
 
 export const Config = {
   title: "Grassroots Future",
