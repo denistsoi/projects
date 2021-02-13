@@ -42,13 +42,13 @@ export default function Home({ page, featuredPartners }) {
           <section className="pt-4 pb-12">
             <h3 className="font-bold pb-4">{featuredPartners.name}</h3>
 
-            <div className="flex">
+            <div className="flex w-full flex-wrap">
               {featuredPartners.partners?.map((partner, index) => {
                 const { file, description, title } = partner.fields.logo.fields
                 return (
                   <div
                     key={`partner-${index}`}
-                    className="w-1/3 image-container"
+                    className="w-full md:flex sm:w-1/3 image-container"
                   >
                     <img alt={description} src={file.url} title={title} />
                   </div>

@@ -15,7 +15,8 @@ span {
 }
 
 .image-container {
-  max-height: 280px;
+  height: 150px;
+  min-width: 120px;
 }
 
 .image-container > img {
