@@ -16,10 +16,13 @@ span {
 
 .image-container {
   height: 150px;
-  min-width: 120px;
 }
 
 .image-container > img {
   margin: 0 auto;
   height: 100px;
+}
+
+.bg-emerald {
+  background: #0e2119;
 }
