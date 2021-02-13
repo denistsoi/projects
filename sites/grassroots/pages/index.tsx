@@ -3,9 +3,10 @@ import Image from "next/image"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import { Layout } from "@components/Layout"
+import { CustomRenderer } from "@components/CustomRenderer"
 
-import { fetchEntry } from "utils/fetchData"
 import { Config } from "config"
+import { fetchEntry } from "utils/fetchData"
 
 export default function Home({ page, featuredPartners }) {
   return (
@@ -35,7 +36,7 @@ export default function Home({ page, featuredPartners }) {
           <section className="pt-4">
             {documentToReactComponents(
               page.fields.content,
-              Config.contentful.options
+              CustomRenderer.options
             )}
           </section>
 
@@ -63,8 +64,10 @@ export default function Home({ page, featuredPartners }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchEntry(process.env.HOME_PAGE)
-  const featuredPartners = await fetchEntry(process.env.FEATURED_PARTNERS)
+  const res = await fetchEntry(Config.contentful.homePageId)
+  const featuredPartners = await fetchEntry(
+    Config.contentful.featuredPartnersId
+  )
 
   return {
     props: {

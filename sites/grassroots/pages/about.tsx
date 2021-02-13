@@ -18,10 +18,10 @@ export default function Home({ page }) {
       <Layout>
         <article className="px-6 lg:px-8 max-w-2xl items-center justify-center xl:m-auto">
           <section className="py-4">
-            {documentToReactComponents(
+            {/* {documentToReactComponents(
               page.fields.content,
               Config.contentful.options
-            )}
+            )} */}
           </section>
         </article>
       </Layout>
@@ -30,7 +30,7 @@ export default function Home({ page }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchEntry(process.env.ABOUT_PAGE)
+  const res = await fetchEntry(Config.contentful.aboutPageId)
   return {
     props: {
       page: res,
