@@ -8,6 +8,7 @@ import { CustomRenderer } from "@components/CustomRenderer"
 import { Config } from "config"
 import { fetchEntry } from "utils/fetchData"
 
+
 export default function Home({ page, featuredPartners }) {
   return (
     <div>
