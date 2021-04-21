@@ -8,7 +8,6 @@ import { CustomRenderer } from "@components/CustomRenderer"
 import { Config } from "config"
 import { fetchEntry } from "utils/fetchData"
 
-
 export default function Home({ page, featuredPartners }) {
   return (
     <div>
@@ -33,31 +32,11 @@ export default function Home({ page, featuredPartners }) {
             priority
           />
         </div>
-        <article className="px-6 lg:px-8 max-w-4xl items-center justify-center mx-auto">
-          <section className="pt-4">
-            {documentToReactComponents(
-              page.fields.content,
-              CustomRenderer.options
-            )}
-          </section>
-
-          <section className="pt-4 pb-12">
-            <h3 className="font-bold pb-4">{featuredPartners.name}</h3>
-
-            <div className="flex w-full flex-wrap">
-              {featuredPartners.partners?.map((partner, index) => {
-                const { file, description, title } = partner.fields.logo.fields
-                return (
-                  <div
-                    key={`partner-${index}`}
-                    className="w-full md:flex sm:w-1/3 image-container"
-                  >
-                    <img alt={description} src={file.url} title={title} />
-                  </div>
-                )
-              })}
-            </div>
-          </section>
+        <article>
+          {documentToReactComponents(
+            page.fields.content,
+            CustomRenderer.options
+          )}
         </article>
       </Layout>
     </div>
@@ -66,17 +45,10 @@ export default function Home({ page, featuredPartners }) {
 
 export async function getStaticProps() {
   const res = await fetchEntry(Config.contentful.homePageId)
-  const featuredPartners = await fetchEntry(
-    Config.contentful.featuredPartnersId
-  )
 
   return {
     props: {
       page: res,
-      featuredPartners: {
-        name: featuredPartners.fields.collectionName,
-        partners: featuredPartners.fields.partners,
-      },
     },
   }
 }

@@ -4,6 +4,7 @@ const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
 const client = require('contentful').createClient({
   space: space,
   accessToken: accessToken,
+  environment: process.env.NODE_ENV === "production" ? "master" : "local",
 })
 
 interface SearchOptions {
@@ -18,7 +19,7 @@ export async function fetchEntries(options?: SearchOptions) {
 }
 
 export async function fetchEntry(entryId) {
-  return await client.getEntry(entryId)
+  return await client.getEntry(entryId, { include: 5 })
 }
 
 export default { fetchEntries, fetchEntry }
