@@ -7,10 +7,12 @@ const people = [
   {
     name: "Simrin Malik",
     role: "Operations Officer",
+    imageUrl: "./profiles/simrin.jpeg",
   },
   {
     name: "Venus Tjang",
     role: "Grants and Communications Officer",
+    imageUrl: "./profiles/venus.jpeg",
   },
 ]
 
@@ -54,6 +56,19 @@ const partners = [
   { name: "Yoga Mandala Project", filename: "yoga-mandala-project.png" },
   { name: "Encompass HK", filename: "encompass-hk.png" },
   { name: "Refugee Union", filename: "refugee-union-logo.jpeg" },
+  { name: "Wise", filename: "wise.png" },
+]
+
+// const supporters = [
+//   { name: "Carmen Wong", linkedin: "" },
+//   { name: "Carmen Wong", linkedin: "" },
+// ]
+
+const networks = [
+  {
+    name: "Asia Pacific Refugee Rights Network",
+    filename: "asia-pacific-refugee-rights-network.png",
+  },
 ]
 
 const Callout = ({ children }) => (
@@ -61,7 +76,7 @@ const Callout = ({ children }) => (
     {children}
   </div>
 )
-export default function Home({ page, featuredPartners }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -103,8 +118,12 @@ export default function Home({ page, featuredPartners }) {
             <p>
               We have held community events around Hong Kong over several years,
               bringing two sides of the city across one table - united by food,
-              the greatest social equalizer. Table of Two Cities started in 2016
-              and is an ongoing initiative within Grassroots Future to this day.
+              the greatest social equalizer.{" "}
+              <a target="_blank" href="https://tableoftwocities.org/">
+                Table of Two Cities
+              </a>{" "}
+              started in 2016 and is an ongoing initiative within Grassroots
+              Future to this day.
             </p>
 
             <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4">
@@ -191,12 +210,12 @@ export default function Home({ page, featuredPartners }) {
                     Our Partners
                   </h2>
                 </div>
-                <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3">
+                <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
                   {partners.map((partner) => {
                     return (
-                      <div className="col-span-1 flex justify-center">
+                      <div className="col-span-1 sm:col-span-1 flex justify-center">
                         <img
-                          className="h-20"
+                          className="object-contain md:h-20 md:object-cover"
                           src={`./partners/${partner.filename}`}
                           alt={`${partner.name}`}
                         />
@@ -204,6 +223,41 @@ export default function Home({ page, featuredPartners }) {
                     )
                   })}
                 </div>
+
+                {/* <div className="grid grid-cols-3 gap-4 md:grid-cols-3 lg:grid-cols-3">
+                  {donations?.map((donation) => {
+                    return (
+                      <div className="col-span-1 flex justify-center">
+                        <img
+                          className="h-20"
+                          src={`./donation-partners/${donation.filename}`}
+                          alt={`${donation.name}`}
+                        />
+                      </div>
+                    )
+                  })}
+                </div> */}
+              </div>
+            </div>
+            {/* networks */}
+            <div className="pb-8">
+              <div className="py-4">
+                <h2 className="text-2xl font-extrabold text-center">
+                  Our Network Partners
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+                {networks?.map((network) => {
+                  return (
+                    <div className="col-span-3 flex justify-center">
+                      <img
+                        className="h-20"
+                        src={`./networks/${network.filename}`}
+                        alt={`${network.name}`}
+                      />
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </section>
@@ -250,11 +304,11 @@ export default function Home({ page, featuredPartners }) {
                   <li key={person.name}>
                     <div className="space-y-4">
                       <div className="aspect-w-3 aspect-h-2 mb-2">
-                        {/* <img
-                          className="object-cover shadow-lg rounded-lg"
+                        <img
+                          className="h-60 w-60 rounded-full md:w-full md:h-full md:object-cover shadow-lg md:rounded-lg"
                           src={person.imageUrl}
                           alt=""
-                        /> */}
+                        />
                       </div>
 
                       <div className="space-y-2">
@@ -276,7 +330,11 @@ export default function Home({ page, featuredPartners }) {
                 {volunteers.map((volunteer) => (
                   <li>
                     {volunteer.linkedin ? (
-                      <a className="underline" href={volunteer.linkedin}>
+                      <a
+                        className="underline"
+                        target="_blank"
+                        href={volunteer.linkedin}
+                      >
                         {volunteer.name}
                       </a>
                     ) : (
@@ -295,7 +353,15 @@ export default function Home({ page, featuredPartners }) {
               <p>
                 If you'd like to support Grassroots Future in their on-going
                 mission to empowering others through education, please reach out
-                to us on Instagram @GrassrootsFuture or...
+                to us on Instagram{" "}
+                <a
+                  className="underline cursor-pointer"
+                  href="https://www.instagram.com/grassrootsfuture/"
+                  target="_blank"
+                >
+                  @GrassrootsFuture
+                </a>{" "}
+                or...
               </p>
             </Callout>
 
