@@ -60,5 +60,16 @@ export const Config = {
     { name: "Encompass HK", filename: "encompass-hk.png" },
     { name: "Refugee Union", filename: "refugee-union-logo.jpeg" },
     { name: "Wise", filename: "wise.png" },
+  ],
+
+  networks: [
+    {
+      name: "Asia Pacific Refugee Rights Network",
+      filename: "asia-pacific-refugee-rights-network.png",
+    },
+    {
+      name: "Refugee Concern Network Hong Kong",
+      filename: "refugee-concern-network.png",
+    },
   ]
 }

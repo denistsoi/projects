@@ -1,26 +1,13 @@
 import Head from "next/head"
 import Image from "next/image"
+
 import { Layout } from "@components/Layout"
+import { Callout } from "@components/Callout"
+
 import { Config } from "config"
 
-const { founder, volunteers, people } = Config
+const { founder, networks, people, volunteers } = Config
 
-const networks = [
-  {
-    name: "Asia Pacific Refugee Rights Network",
-    filename: "asia-pacific-refugee-rights-network.png",
-  },
-  {
-    name: "Refugee Concern Network Hong Kong",
-    filename: "refugee-concern-network.png",
-  },
-]
-
-const Callout = ({ children }) => (
-  <div className="bg-white shadow-2xl rounded-xl overflow-hidden lg:p-8 p-4">
-    {children}
-  </div>
-)
 export default function Home() {
   return (
     <>
@@ -156,9 +143,12 @@ export default function Home() {
                   </h2>
                 </div>
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
-                  {Config.partners.map((partner) => {
+                  {Config.partners.map((partner, index) => {
                     return (
-                      <div className="col-span-1 sm:col-span-1 flex justify-center">
+                      <div
+                        className="col-span-1 sm:col-span-1 flex justify-center"
+                        key={`partner-${index}`}
+                      >
                         <img
                           className="object-contain md:h-20 md:object-cover"
                           src={`./partners/${partner.filename}`}
@@ -178,9 +168,12 @@ export default function Home() {
                 </h2>
               </div>
               <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
-                {networks?.map((network) => {
+                {networks?.map((network, index) => {
                   return (
-                    <div className="col-span-1 flex justify-center">
+                    <div
+                      className="col-span-1 flex justify-center"
+                      key={`network-${index}`}
+                    >
                       <img
                         className="h-20"
                         src={`./networks/${network.filename}`}
@@ -222,8 +215,8 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                {founder?.bio?.map((b) => (
-                  <p>{b}</p>
+                {founder?.bio?.map((line, index) => (
+                  <p key={`${founder.name}-bio-${index}`}>{line}</p>
                 ))}
               </div>
             </div>
@@ -259,7 +252,7 @@ export default function Home() {
               <h3 className="text-lg leading-6 py-2 font-medium">Volunteers</h3>
               <ul>
                 {volunteers.map((volunteer) => (
-                  <li>
+                  <li key={volunteer.name}>
                     {volunteer.linkedin ? (
                       <a
                         className="underline"
