@@ -69,6 +69,10 @@ const networks = [
     name: "Asia Pacific Refugee Rights Network",
     filename: "asia-pacific-refugee-rights-network.png",
   },
+  {
+    name: "Refugee Concern Network Hong Kong",
+    filename: "refugee-concern-network.png",
+  },
 ]
 
 const Callout = ({ children }) => (
@@ -246,10 +250,10 @@ export default function Home() {
                   Our Network Partners
                 </h2>
               </div>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+              <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
                 {networks?.map((network) => {
                   return (
-                    <div className="col-span-3 flex justify-center">
+                    <div className="col-span-1 flex justify-center">
                       <img
                         className="h-20"
                         src={`./networks/${network.filename}`}
