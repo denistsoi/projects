@@ -91,8 +91,8 @@ export default function Home() {
               <Image
                 src="/hero/DSCF5736.webp"
                 layout="responsive"
-                height={590}
-                width={1024}
+                height={1151}
+                width={2048}
                 priority
               />
             </div>
@@ -128,6 +128,30 @@ export default function Home() {
               trauma. Grassroots Future focusses and develops programming around
               four key areas:
             </p>
+
+            <ol className="list-decimal pl-4">
+              <li className="py-2">
+                <strong>Education:</strong> Supporting the needs of young people
+                and adults through privately funded vocational training,
+                mentorship, workshops and general skills training to improve
+                capacity and self sufficiency.
+              </li>
+
+              <li className="py-2">
+                <strong>Community outreach:</strong> Community outreach and
+                cultural events, which are curated by the refugee community, to
+                engage different groups within society.
+              </li>
+              <li className="py-2">
+                <strong>Well-being:</strong> Provide safe spaces for healing and
+                mental well-being through the arts and recreational activities.
+              </li>
+              <li className="py-2">
+                <strong>Investing in the future:</strong> Supporting the
+                educational expenses of children through our initiatives and
+                event programming.
+              </li>
+            </ol>
           </section>
 
           <section className="max-w-4xl mx-auto py-8 px-6 border-t-2">
