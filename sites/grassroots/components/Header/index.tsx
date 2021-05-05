@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 import { Config } from "config"
 
@@ -13,6 +14,18 @@ export const Header = () => (
         priority
         alt={Config.alt.logoName}
       />
+
+      {/* <div>
+        {Config?.links?.map((link) => {
+          return (
+            <Link href={link.href}>
+              <span className="text-gray-50 cursor-pointer underline">
+                {link.text}
+              </span>
+            </Link>
+          )
+        })}
+      </div> */}
     </div>
   </header>
 )

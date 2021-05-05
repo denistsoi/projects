@@ -5,10 +5,4 @@ export const Config = {
   alt: {
     logoName: "Grassroots Future logo",
   },
-
-  contentful: {
-    homePageId: "5xxSi40mvmXQoIJSsmOdeI",
-    aboutPageId: "5Ffkeo9D4oDs3neZrAfq70",
-    featuredPartnersId: "6l4J9blqrSPAEM1de3Ykx8"
-  }
 }
