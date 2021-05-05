@@ -36,7 +36,7 @@ export default function Home() {
 
       <Layout>
         <div className="relative">
-          <div className="relative sm:overflow-hidden">
+          <div className="relative sm:overflow-hidden bg-gray-100">
             <Image
               src="/hero/demonstration.webp"
               layout="responsive"
@@ -71,13 +71,12 @@ export default function Home() {
               Future to this day.
             </p>
 
-            <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4">
+            <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
               <Image
                 src="/hero/DSCF5736.webp"
                 layout="responsive"
                 height={590}
                 width={1024}
-                loading="eager"
                 priority
               />
             </div>
@@ -93,12 +92,12 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="relative sm:overflow-hidden">
+          <div className="relative sm:overflow-hidden bg-gray-100">
             <Image
               src="/hero/DSF1996.webp"
               height={590}
               width={900}
-              loading="eager"
+              loading="lazy"
               layout="responsive"
             />
           </div>
@@ -127,12 +126,13 @@ export default function Home() {
               new.
             </p>
 
-            <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4">
-              <img
+            <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
+              <Image
                 src="/hero/DSCF8788.webp"
-                height={590}
+                layout="responsive"
+                height={670}
                 width={1024}
-                loading="eager"
+                loading="lazy"
               />
             </div>
             <div className="pt-4">
@@ -168,20 +168,6 @@ export default function Home() {
                     )
                   })}
                 </div>
-
-                {/* <div className="grid grid-cols-3 gap-4 md:grid-cols-3 lg:grid-cols-3">
-                  {donations?.map((donation) => {
-                    return (
-                      <div className="col-span-1 flex justify-center">
-                        <img
-                          className="h-20"
-                          src={`./donation-partners/${donation.filename}`}
-                          alt={`${donation.name}`}
-                        />
-                      </div>
-                    )
-                  })}
-                </div> */}
               </div>
             </div>
             {/* networks */}
