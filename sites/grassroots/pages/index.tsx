@@ -18,7 +18,7 @@ const Meta = () => {
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         rel="preconnect"
-        href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito&amp;family=Roboto+Slab&amp;display=swap"
       />
 
       <meta property="og:type" content="website" />
@@ -155,7 +155,7 @@ export default function Home() {
           </section>
 
           <section className="max-w-4xl mx-auto py-8 px-6 border-t-2">
-            <h1>Activites</h1>
+            <h1>Activities</h1>
             <p>
               <a target="_blank" href="https://www.tableoftwocities.org/">
                 Through Table of Two Cities
@@ -203,7 +203,7 @@ export default function Home() {
                         key={`partner-${index}`}
                       >
                         <img
-                          className="object-contain md:h-20 md:object-cover"
+                          className="object-contain h-16 md:h-20 md:object-cover"
                           src={`./partners/${partner.filename}`}
                           alt={`${partner.name}`}
                         />
