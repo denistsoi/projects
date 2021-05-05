@@ -1,5 +1,7 @@
 export const Config = {
   title: "Grassroots Future",
+  description: "Grassroots Future is a registered charity in Hong Kong which came out of a desire to help refugee-led initiatives and grassroots organizations working with refugees build capacity.",
+
   footer:
     "Grassroots Future is a charitable institution under section 88 of the Inland Revenue Ordinance with No. 91/17131",
   alt: {
