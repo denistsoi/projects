@@ -3,66 +3,7 @@ import Image from "next/image"
 import { Layout } from "@components/Layout"
 import { Config } from "config"
 
-const people = [
-  {
-    name: "Simrin Malik",
-    role: "Operations Officer",
-    imageUrl: "./profiles/simrin.jpeg",
-  },
-  {
-    name: "Venus Tjang",
-    role: "Grants and Communications Officer",
-    imageUrl: "./profiles/venus.jpeg",
-  },
-]
-
-const founder = {
-  name: "Tegan Smyth",
-  role: "Director",
-  bio: [
-    "Tegan is a legally-trained Compliance professional with 6+ years of experience in private practice and global financial institutions in sanctions, AML/KYC, and project management. Her interest in refugee issues stems from her days training as a lawyer, which involved working for a community legal centre in Australia that focussed on providing civil law advice to refugees and new migrants.",
-    "As the Founder and CEO of Grassroots Future, she is involved in donation drives for refugee and asylum seeker communities, as well developing well-being, education and outreach initiatives to bridge gaps across communities.",
-  ],
-  imageUrl: "./profiles/tegan.jpeg",
-}
-
-const volunteers = [
-  {
-    name: "Anjali Kelkar",
-    linkedin: "https://www.linkedin.com/in/anjali-kelkar-12b28b/",
-  },
-  {
-    name: "Shama Mashroor",
-    linkedin: "https://www.linkedin.com/in/shama-mashroor-a71546134/",
-  },
-  {
-    name: "Suskihanna Gurung",
-    linkedin: "https://www.linkedin.com/in/suskihanna-gurung-066402100/",
-  },
-  {
-    name: "Aarohi Narain",
-    linkedin: "https://www.linkedin.com/in/aarohi-narain/",
-  },
-  { name: "Denis Tsoi", linkedin: "https://www.linkedin.com/in/denistsoi/" },
-  { name: "Phoebe So", linkedin: "https://www.linkedin.com/in/phoebeso/" },
-  {
-    name: "Zeerak Khurram",
-    linkedin: "https://www.linkedin.com/in/zeerak-khurram-ab434614b/",
-  },
-  { name: "Carmen Wong", linkedin: "" },
-]
-
-const partners = [
-  { name: "Yoga Mandala Project", filename: "yoga-mandala-project.png" },
-  { name: "Encompass HK", filename: "encompass-hk.png" },
-  { name: "Refugee Union", filename: "refugee-union-logo.jpeg" },
-  { name: "Wise", filename: "wise.png" },
-]
-
-// const supporters = [
-//   { name: "Carmen Wong", linkedin: "" },
-//   { name: "Carmen Wong", linkedin: "" },
-// ]
+const { founder, volunteers, people } = Config
 
 const networks = [
   {
@@ -215,7 +156,7 @@ export default function Home() {
                   </h2>
                 </div>
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
-                  {partners.map((partner) => {
+                  {Config.partners.map((partner) => {
                     return (
                       <div className="col-span-1 sm:col-span-1 flex justify-center">
                         <img
@@ -284,7 +225,7 @@ export default function Home() {
               <div className="aspect-w-3 aspect-h-1 mb-2">
                 <img
                   className="object-cover shadow-lg rounded-lg"
-                  src={founder.imageUrl}
+                  src={Config.founder.imageUrl}
                   alt=""
                 />
               </div>

@@ -5,4 +5,60 @@ export const Config = {
   alt: {
     logoName: "Grassroots Future logo",
   },
+
+  people: [
+    {
+      name: "Simrin Malik",
+      role: "Operations Officer",
+      imageUrl: "./profiles/simrin.jpeg",
+    },
+    {
+      name: "Venus Tjang",
+      role: "Grants and Communications Officer",
+      imageUrl: "./profiles/venus.jpeg",
+    },
+  ],
+
+  founder: {
+    name: "Tegan Smyth",
+    role: "Director",
+    bio: [
+      "Tegan is a legally-trained Compliance professional with 6+ years of experience in private practice and global financial institutions in sanctions, AML/KYC, and project management. Her interest in refugee issues stems from her days training as a lawyer, which involved working for a community legal centre in Australia that focussed on providing civil law advice to refugees and new migrants.",
+      "As the Founder and CEO of Grassroots Future, she is involved in donation drives for refugee and asylum seeker communities, as well developing well-being, education and outreach initiatives to bridge gaps across communities.",
+    ],
+    imageUrl: "./profiles/tegan.jpeg",
+  },
+
+  volunteers: [
+    {
+      name: "Anjali Kelkar",
+      linkedin: "https://www.linkedin.com/in/anjali-kelkar-12b28b/",
+    },
+    {
+      name: "Shama Mashroor",
+      linkedin: "https://www.linkedin.com/in/shama-mashroor-a71546134/",
+    },
+    {
+      name: "Suskihanna Gurung",
+      linkedin: "https://www.linkedin.com/in/suskihanna-gurung-066402100/",
+    },
+    {
+      name: "Aarohi Narain",
+      linkedin: "https://www.linkedin.com/in/aarohi-narain/",
+    },
+    { name: "Denis Tsoi", linkedin: "https://www.linkedin.com/in/denistsoi/" },
+    { name: "Phoebe So", linkedin: "https://www.linkedin.com/in/phoebeso/" },
+    {
+      name: "Zeerak Khurram",
+      linkedin: "https://www.linkedin.com/in/zeerak-khurram-ab434614b/",
+    },
+    { name: "Carmen Wong", linkedin: "" },
+  ],
+
+  partners: [
+    { name: "Yoga Mandala Project", filename: "yoga-mandala-project.png" },
+    { name: "Encompass HK", filename: "encompass-hk.png" },
+    { name: "Refugee Union", filename: "refugee-union-logo.jpeg" },
+    { name: "Wise", filename: "wise.png" },
+  ]
 }
