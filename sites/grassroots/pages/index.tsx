@@ -109,7 +109,7 @@ export default function Home({ page, featuredPartners }) {
 
             <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4">
               <Image
-                src="/hero/DSCF5736.jpeg"
+                src="/hero/DSCF5736.webp"
                 layout="responsive"
                 height={590}
                 width={1024}
@@ -131,7 +131,7 @@ export default function Home({ page, featuredPartners }) {
 
           <div className="relative sm:overflow-hidden">
             <Image
-              src="/hero/DSF1996.jpeg"
+              src="/hero/DSF1996.webp"
               height={590}
               width={900}
               loading="eager"
@@ -165,7 +165,7 @@ export default function Home({ page, featuredPartners }) {
 
             <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4">
               <img
-                src="/hero/DSCF8788.jpeg"
+                src="/hero/DSCF8788.webp"
                 height={590}
                 width={1024}
                 loading="eager"
