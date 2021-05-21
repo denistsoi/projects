@@ -176,7 +176,7 @@ export default function Home() {
               />
             </div>
             <div className="pt-4">
-              <h3>Other Activites</h3>
+              <h3>Other Activities</h3>
               <ul>
                 <li>Crafts workshops</li>
                 <li>Cooking demonstrations / workshops</li>
