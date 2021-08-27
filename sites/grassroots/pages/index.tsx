@@ -6,6 +6,10 @@ import { Callout } from "@components/Callout"
 
 import { Config } from "config"
 
+import demonstration from "../public/hero/demonstration.webp"
+import falafel from "../public/hero/DSCF5736.webp"
+import cooking from "../public/hero/DSF1996.webp"
+
 const { founder, networks, people, volunteers } = Config
 
 const Meta = () => {
@@ -54,7 +58,8 @@ export default function Home() {
         <div className="relative">
           <div className="relative sm:overflow-hidden bg-gray-100">
             <Image
-              src="/hero/demonstration.webp"
+              placeholder="blur"
+              src={demonstration}
               layout="responsive"
               height={590}
               width={1024}
@@ -89,7 +94,8 @@ export default function Home() {
 
             <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
               <Image
-                src="/hero/DSCF5736.webp"
+                placeholder="blur"
+                src={falafel}
                 layout="responsive"
                 height={1151}
                 width={2048}
@@ -168,7 +174,8 @@ export default function Home() {
 
             <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
               <Image
-                src="/hero/DSCF8788.webp"
+                placeholder="blur"
+                src={cooking}
                 layout="responsive"
                 height={670}
                 width={1024}
