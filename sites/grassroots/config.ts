@@ -15,9 +15,9 @@ export const Config = {
       imageUrl: "./profiles/simrin.jpeg",
     },
     {
-      name: "Venus Tjang",
+      name: "Shormi Ahmed",
       role: "Grants and Communications Officer",
-      imageUrl: "./profiles/venus.jpeg",
+      imageUrl: "./profiles/shormi.jpeg",
     },
   ],
 
