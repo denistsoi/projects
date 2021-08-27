@@ -9,6 +9,7 @@ import { Config } from "config"
 import demonstration from "../public/hero/demonstration.webp"
 import falafel from "../public/hero/DSCF5736.webp"
 import cooking from "../public/hero/DSF1996.webp"
+import spread from "../public/hero/DSCF8788.webp"
 
 const { founder, networks, people, volunteers } = Config
 
@@ -116,7 +117,8 @@ export default function Home() {
 
           <div className="relative sm:overflow-hidden bg-gray-100">
             <Image
-              src="/hero/DSF1996.webp"
+              placeholder="blur"
+              src={cooking}
               height={590}
               width={900}
               loading="lazy"
@@ -175,7 +177,7 @@ export default function Home() {
             <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
               <Image
                 placeholder="blur"
-                src={cooking}
+                src={spread}
                 layout="responsive"
                 height={670}
                 width={1024}
