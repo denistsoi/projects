@@ -16,7 +16,7 @@ export const Config = {
     },
     {
       name: "Shormi Ahmed",
-      role: "Grants and Communications Officer",
+      role: "Grants Officer",
       imageUrl: "./profiles/shormi.jpeg",
     },
   ],
