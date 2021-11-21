@@ -1,8 +1,8 @@
-import Head from "next/head"
 import Image from "next/image"
 
 import { Layout } from "@components/Layout"
 import { Callout } from "@components/Callout"
+import { MetaHead } from "@components/MetaHead"
 
 import { Config } from "config"
 
@@ -13,48 +13,10 @@ import spread from "../public/hero/DSCF8788.webp"
 
 const { founder, networks, people, volunteers } = Config
 
-const Meta = () => {
-  return (
-    <Head>
-      <title>{Config.title}</title>
-      <meta name="title" content={Config.title}></meta>
-      <meta name="description" content={Config.description}></meta>
-      <link rel="icon" href="/favicon.png" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com/css2?family=Nunito&amp;family=Roboto+Slab&amp;display=swap"
-      />
-
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://grassrootsfuture.org/" />
-      <meta property="og:title" content={Config.title} />
-      <meta property="og:description" content={Config.description} />
-      <meta
-        property="og:image"
-        content="https://grassrootsfuture.org/hero/demonstration.webp"
-      />
-
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://grassrootsfuture.org/" />
-      <meta property="twitter:title" content="Grassroots Future" />
-      <meta
-        property="twitter:description"
-        content="Grassroots Future is a registered charity in Hong Kong which came out of a desire to help refugee-led initiatives and grassroots organizations working with refugees build capacity."
-      />
-      <meta
-        property="twitter:image"
-        content="https://grassrootsfuture.org/hero/demonstration.webp"
-      />
-    </Head>
-  )
-}
-
 export default function Home() {
   return (
     <>
-      <Meta />
-
+      <MetaHead />
       <Layout>
         <div className="relative">
           <div className="relative sm:overflow-hidden bg-gray-100">
@@ -204,7 +166,7 @@ export default function Home() {
                     Our Partners
                   </h2>
                 </div>
-                <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
+                <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3">
                   {Config.partners.map((partner, index) => {
                     return (
                       <div

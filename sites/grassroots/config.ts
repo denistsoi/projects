@@ -62,6 +62,7 @@ export const Config = {
     { name: "Encompass HK", filename: "encompass-hk.png" },
     { name: "Refugee Union", filename: "refugee-union-logo.jpeg" },
     { name: "Wise", filename: "wise.png" },
+    { name: "Breadline", filename: "breadline.jpeg" }
   ],
 
   networks: [
