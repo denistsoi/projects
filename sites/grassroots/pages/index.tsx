@@ -10,6 +10,7 @@ import demonstration from "../public/hero/demonstration.webp"
 import falafel from "../public/hero/DSCF5736.webp"
 import cooking from "../public/hero/DSF1996.webp"
 import spread from "../public/hero/DSCF8788.webp"
+import welfare from "../public/hero/welfare-infographic.png"
 
 const { founder, networks, people, volunteers } = Config
 
@@ -38,22 +39,44 @@ export default function Home() {
             <p>
               Grassroots Future is a registered charity in Hong Kong which came
               out of a desire to help refugee-led initiatives and grassroots
-              organizations working with refugees build capacity. Our journey to
-              setting up Grassroots Future started with Table of Two Cities, a
-              grassroots storytelling initiative to showcase refugee narratives
-              through the medium of food.
+              organizations working with refugees build capacity.
             </p>
 
             <p>
-              We have held community events around Hong Kong over several years,
-              bringing two sides of the city across one table - united by food,
-              the greatest social equalizer.{" "}
+              Grassroots Future started out as{" "}
               <a target="_blank" href="https://tableoftwocities.org/">
                 Table of Two Cities
               </a>{" "}
-              started in 2016 and is an ongoing initiative within Grassroots
-              Future to this day.
+              (TOTC) in 2016, a grassroots storytelling initiative to showcase
+              refugee narratives through the medium of food. We have held
+              community events around Hong Kong, united by food, the greatest
+              social equaliser. Through our interaction with the members, we
+              recognize the immediate and practical needs of the refugee
+              community that need to be met, but there is also a great yearning
+              to live a self-sufficient, dignified and purposeful life.
             </p>
+
+            <p>We believe that:</p>
+            <ul className="list-disc pl-4">
+              <li className="py-2">
+                Everybody deserves to live with dignity and purpose.
+              </li>
+              <li className="py-2">
+                We can all contribute to a more sustainable world in different
+                capacities.
+              </li>
+              <li className="py-2">
+                More thoughtful and interesting interactions between refugees
+                and non-refugees can enhance mutual understanding and enrich our
+                city.
+              </li>
+              <li className="py-2">
+                We can create a platform and support undiscovered talents to
+                develop their skills to become self-reliant and create an
+                inclusive environment where we can collectively innovate
+                solutions for our society.
+              </li>
+            </ul>
 
             <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
               <Image
@@ -87,76 +110,6 @@ export default function Home() {
               layout="responsive"
             />
           </div>
-
-          <section className="max-w-4xl mx-auto py-8 px-6">
-            <p>
-              We believe in holding space for refugee initiatives because there
-              are undiscovered talents within the community which need a
-              platform and support to succeed. We hope to incubate these ideas
-              to scale and become sustainable. We also believe in using the
-              power of art and culture to provide safe spaces for survivors of
-              trauma. Grassroots Future focusses and develops programming around
-              four key areas:
-            </p>
-
-            <ol className="list-decimal pl-4">
-              <li className="py-2">
-                <strong>Education:</strong> Supporting the needs of young people
-                and adults through privately funded vocational training,
-                mentorship, workshops and general skills training to improve
-                capacity and self sufficiency.
-              </li>
-
-              <li className="py-2">
-                <strong>Community outreach:</strong> Community outreach and
-                cultural events, which are curated by the refugee community, to
-                engage different groups within society.
-              </li>
-              <li className="py-2">
-                <strong>Well-being:</strong> Provide safe spaces for healing and
-                mental well-being through the arts and recreational activities.
-              </li>
-              <li className="py-2">
-                <strong>Investing in the future:</strong> Supporting the
-                educational expenses of children through our initiatives and
-                event programming.
-              </li>
-            </ol>
-          </section>
-
-          <section className="max-w-4xl mx-auto py-8 px-6 border-t-2">
-            <h1>Activities</h1>
-            <p>
-              <a target="_blank" href="https://www.tableoftwocities.org/">
-                Through Table of Two Cities
-              </a>
-              , a food and culture initiative, we have been organising food and
-              culture events since 2016. Through participating in our events,
-              you can support the refugee community while learning something
-              new.
-            </p>
-
-            <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
-              <Image
-                placeholder="blur"
-                src={spread}
-                layout="responsive"
-                height={670}
-                width={1024}
-                loading="lazy"
-              />
-            </div>
-            <div className="pt-4">
-              <h3>Other Activities</h3>
-              <ul>
-                <li>Crafts workshops</li>
-                <li>Cooking demonstrations / workshops</li>
-                <li>Food / culture sharing</li>
-                <li>Concerts / Shows</li>
-                <li>Exhibitions</li>
-              </ul>
-            </div>
-          </section>
 
           <section>
             <div className="bg-white">
@@ -209,6 +162,100 @@ export default function Home() {
                   })}
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section className="max-w-4xl mx-auto py-8 px-6">
+            <h1>What we do</h1>
+            <p>
+              Grassroots Future envisions to build capacity among refugee-led
+              initiatives, focusing on community building through events and
+              projects driven by members of the refugee community.
+            </p>
+
+            <ol className="list-decimal pl-4">
+              <li className="py-2">
+                <strong>Education:</strong> Supporting the needs of young people
+                and adults through privately funded vocational training,
+                mentorship, workshops and general skills training to improve
+                capacity and self-sufficiency. Supporting the educational
+                expenses of children through our initiatives and event
+                programming.
+              </li>
+
+              <li className="py-2">
+                <strong>Community building:</strong> Community outreach and
+                cultural events, which are curated by the refugee community, to
+                engage different groups within society.
+              </li>
+              <li className="py-2">
+                <strong>Well-being:</strong> Provide safe spaces for healing and
+                mental well-being through the arts and recreational activities.
+              </li>
+            </ol>
+          </section>
+
+          <section className="max-w-4xl mx-auto py-8 px-6 border-t-2">
+            <h1>Activities</h1>
+            <p>
+              <a target="_blank" href="https://www.tableoftwocities.org/">
+                Through Table of Two Cities
+              </a>
+              , a food and culture initiative, we have been organising food and
+              culture events since 2016. Through participating in our events,
+              you can support the refugee community while learning something
+              new.
+            </p>
+
+            <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
+              <Image
+                placeholder="blur"
+                src={spread}
+                layout="responsive"
+                height={670}
+                width={1024}
+                loading="lazy"
+              />
+            </div>
+            <div className="pt-4">
+              <h3>Other Activities</h3>
+              <ul>
+                <li>Crafts workshops</li>
+                <li>Cooking demonstrations / workshops</li>
+                <li>Food / culture sharing</li>
+                <li>Concerts / Shows</li>
+                <li>Exhibitions</li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="max-w-4xl mx-auto py-8 px-6 border-t-2">
+            <h2>About refugees and asylum seekers</h2>
+            <p>
+              There are 13,000-14,000 refugees and asylum seekers seeking
+              protection in Hong Kong. Most of them come from countries in
+              Africa, Middle East and South Asia, and some from Southeast Asia.
+            </p>
+
+            <p>
+              Many of them have waited for over 10 years to have their case
+              heard. During this long, uncertain wait, they are not given a Hong
+              Kong ID and thus the many benefits that come with it, nor are they
+              allowed to work. They have little choice but to rely on support
+              from charities and the government's symbolic HK$3,000 subsidy,
+              which is inclusive of HK$200 for transportation, HK$1,200 in
+              vouchers in a designated supermarket, and $1,500 paid directly to
+              the landlord for rent.
+            </p>
+            <div className="relative rounded-2xl shadow-xl sm:overflow-hidden my-4 bg-gray-100">
+              <Image
+                placeholder="blur"
+                src={welfare}
+                layout="responsive"
+                height={555}
+                width={848}
+                loading="lazy"
+              />
             </div>
           </section>
 
