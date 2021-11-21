@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
@@ -6,7 +8,8 @@ module.exports = {
       colors: {
         "dark": "#222",
         "emerald": "#0E2119",
-        "highlight": "#7DB67F"
+        "highlight": "#7DB67F",
+        "green": colors.green
       },
     },
   },
