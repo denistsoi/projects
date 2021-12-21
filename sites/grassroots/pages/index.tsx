@@ -185,12 +185,12 @@ export default function Home() {
               </li>
 
               <li className="py-2">
-                <strong>Community building:</strong> Community outreach and
+                <strong>Community building:</strong>Community outreach and
                 cultural events, which are curated by the refugee community, to
                 engage different groups within society.
               </li>
               <li className="py-2">
-                <strong>Well-being:</strong> Provide safe spaces for healing and
+                <strong>Well-being:</strong>Provide safe spaces for healing and
                 mental well-being through the arts and recreational activities.
               </li>
             </ol>
@@ -253,8 +253,8 @@ export default function Home() {
                 placeholder="blur"
                 src={welfare}
                 layout="responsive"
-                height={555}
-                width={848}
+                height={1080}
+                width={1920}
                 loading="lazy"
               />
             </div>
