@@ -10,9 +10,9 @@ export const Config = {
 
   people: [
     {
-      name: "Shormi Ahmed",
-      role: "Grants Officer",
-      imageUrl: "./profiles/shormi.jpeg",
+      name: "Joy Lee",
+      role: "Officer",
+      imageUrl: "./profiles/joy.jpeg",
     },
   ],
 

@@ -301,9 +301,9 @@ export default function Home() {
                 {people.map((person) => (
                   <li key={person.name}>
                     <div className="space-y-4">
-                      <div className="aspect-w-3 aspect-h-2 mb-2">
+                      <div className="mb-2 rounded-full md:rounded-none aspect-h-2 aspect-w-2 h-60 w-60 overflow-hidden md:overflow-auto md:w-full md:h-full">
                         <img
-                          className="h-60 w-60 rounded-full md:w-full md:h-full md:object-cover shadow-lg md:rounded-lg"
+                          className="rounded-full md:w-full md:h-full md:object-cover shadow-lg md:rounded-lg"
                           src={person.imageUrl}
                           alt=""
                         />
