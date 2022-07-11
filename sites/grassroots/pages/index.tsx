@@ -296,30 +296,37 @@ export default function Home() {
             </div>
 
             {/* people */}
-            <div className="py-4">
-              <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-2 lg:gap-x-8 list-none px-0">
-                {people.map((person) => (
-                  <li key={person.name}>
-                    <div className="space-y-4">
-                      <div className="mb-2 rounded-full md:rounded-none aspect-h-2 aspect-w-2 h-60 w-60 overflow-hidden md:overflow-auto md:w-full md:h-full">
-                        <img
-                          className="rounded-full md:w-full md:h-full md:object-cover shadow-lg md:rounded-lg"
-                          src={person.imageUrl}
-                          alt=""
-                        />
-                      </div>
+            {
+              people.length > 0 ? (
+                <div className="py-4">
+                  <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-2 lg:gap-x-8 list-none px-0">
+                    {people.map((person) => (
+                      <li key={person.name}>
+                        <div className="space-y-4">
+                          <div className="mb-2 rounded-full md:rounded-none aspect-h-2 aspect-w-2 h-60 w-60 overflow-hidden md:overflow-auto md:w-full md:h-full">
+                            <img
+                              className="rounded-full md:w-full md:h-full md:object-cover shadow-lg md:rounded-lg"
+                              src={person.imageUrl}
+                              alt=""
+                            />
+                          </div>
 
-                      <div className="space-y-2">
-                        <div className="text-lg leading-6 font-medium">
-                          <h3>{person.name}</h3>
-                          <p className="text-highlight">{person.role}</p>
+                          <div className="space-y-2">
+                            <div className="text-lg leading-6 font-medium">
+                              <h3>{person.name}</h3>
+                              <p className="text-highlight">{person.role}</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                null
+              )
+            }
+            
 
             {/* Volunteers */}
             <div className="py-4">

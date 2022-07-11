@@ -8,13 +8,7 @@ export const Config = {
     logoName: "Grassroots Future logo",
   },
 
-  people: [
-    {
-      name: "Joy Lee",
-      role: "Events/Programs Officer",
-      imageUrl: "./profiles/joy.jpeg",
-    },
-  ],
+  people: [],
 
   founder: {
     name: "Tegan Smyth",
