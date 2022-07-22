@@ -146,11 +146,11 @@ export default function Home() {
                 </h2>
               </div>
               <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
+                <div className="grid">
                   {networks?.map((network, index) => {
                     return (
                       <div
-                        className="col-span-1 flex justify-center"
+                        className="flex justify-center"
                         key={`network-${index}`}
                       >
                         <img
