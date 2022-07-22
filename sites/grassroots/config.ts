@@ -67,9 +67,9 @@ export const Config = {
       name: "Asia Pacific Refugee Rights Network",
       filename: "asia-pacific-refugee-rights-network.png",
     },
-    {
-      name: "Refugee Concern Network Hong Kong",
-      filename: "refugee-concern-network.png",
-    },
+    // {
+    //   name: "Refugee Concern Network Hong Kong",
+    //   filename: "refugee-concern-network.png",
+    // },
   ]
 }
