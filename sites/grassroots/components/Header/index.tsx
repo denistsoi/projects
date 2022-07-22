@@ -28,7 +28,7 @@ export const Header = () => (
         {Config?.links?.map((link: HeaderLink) => {
           return (
             <Link href={link?.href ?? "#"}>
-              <span className="text-gray-50 cursor-pointer">
+              <span className="text-gray-50 cursor-pointer hover:underline underline-offset-4">
                 {link.text}
               </span>
             </Link>
