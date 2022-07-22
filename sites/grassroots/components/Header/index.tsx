@@ -25,9 +25,9 @@ export const Header = () => (
       </Link>
 
       <div className="flex items-between gap-4">
-        {Config?.links?.map((link: HeaderLink) => {
+        {Config?.links?.map((link: HeaderLink, index: Number) => {
           return (
-            <Link href={link?.href ?? "#"}>
+            <Link href={link?.href ?? "#"} key={`menu-link-${index}`}>
               <span className="text-gray-50 cursor-pointer hover:underline underline-offset-4">
                 {link.text}
               </span>
