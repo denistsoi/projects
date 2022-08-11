@@ -4,9 +4,17 @@ export const Config = {
 
   footer:
     "Grassroots Future is a charitable institution under section 88 of the Inland Revenue Ordinance with No. 91/17131",
+  
   alt: {
     logoName: "Grassroots Future logo",
   },
+
+  links: [
+    {
+      href: "media",
+      text: "Media"
+    },
+  ],
 
   people: [],
 
@@ -59,9 +67,5 @@ export const Config = {
       name: "Asia Pacific Refugee Rights Network",
       filename: "asia-pacific-refugee-rights-network.png",
     },
-    // {
-    //   name: "Refugee Concern Network Hong Kong",
-    //   filename: "refugee-concern-network.png",
-    // },
   ]
 }
