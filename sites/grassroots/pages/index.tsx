@@ -11,6 +11,8 @@ import falafel from "../public/hero/DSCF5736.webp"
 import cooking from "../public/hero/DSF1996.webp"
 import spread from "../public/hero/DSCF8788.webp"
 import welfare from "../public/hero/welfare-infographic.png"
+import { Donation } from "@components/Donation"
+import { RaiselyLink } from "@components/Donation/RaiselyLink"
 
 const { founder, networks, people, volunteers } = Config
 
@@ -34,6 +36,16 @@ export default function Home() {
         </div>
 
         <main>
+
+          <section className="bg-dark">
+            <div className="max-w-4xl mx-auto py-8 px-6">
+              <div className="p-1 bg-violet-400 rounded-lg">
+
+                <RaiselyLink />
+              </div>
+            </div>
+          </section>
+
           <section className="max-w-4xl mx-auto py-8 px-6">
             <h1>Mission</h1>
             <p>
@@ -369,40 +381,7 @@ export default function Home() {
               </p>
             </Callout>
 
-            <Callout>
-              <div className="pb-4">
-                <div className="pb-2">
-                  If you would like to donate to support our initiatives
-                  financially, you can donate directly to:
-                </div>
-                <div>
-                  <span>Grassroots Future Limited</span>
-                </div>
-                <div>
-                  <span>Bank: Public Bank (Hong Kong)</span>
-                </div>
-                <div>
-                  <span>Bank Code: 028</span>
-                </div>
-                <div>
-                  <span>Branch Code: 714</span>
-                </div>
-                <div>
-                  <span>Account: 0714393415233</span>
-                </div>
-              </div>
-
-              <div className="bg-green-200 p-4 rounded-md">
-                Support our crowdfunding campaign on Raisely:{" "}
-                <a
-                  className="underline cursor-pointer"
-                  href="https://grassroots-future.raisely.com"
-                  target="_blank"
-                >
-                  https://grassroots-future.raisely.com
-                </a>
-              </div>
-            </Callout>
+            <Donation />
           </div>
         </section>
       </Layout>
