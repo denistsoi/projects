@@ -39,9 +39,8 @@ export default function Home() {
 
           <section className="bg-dark">
             <div className="max-w-4xl mx-auto py-8 px-6">
-              <div className="p-1 bg-violet-400 rounded-lg">
-
-                <RaiselyLink />
+              <div className="p-1 rounded-lg">
+                <RaiselyLink cta={true} />
               </div>
             </div>
           </section>
