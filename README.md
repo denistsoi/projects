@@ -1,33 +1,7 @@
-# monorepo
+# Grassroots (Next js)
 
-## Description
+### Description
+Grassroots Future website with Next.js
 
-Monorepo for sites & packages.
-
-## Aims
-
-- Consolidate development of components for sites
-- Ensure all sites are stored within sites, regardless of frontend framework
-
-## Project Structure
-
-```
-sites/                // static or next sites  
-  grassroots          // grassroots future (nextjs)  
-README.md             // this
-```
-
-## Generating a new sites
-
-```
-cd sites/
-npx create-next-app <name-of-new-site> -e https://github.com/denistsoi/template
-```
-
-## Author
-
-Denis Tsoi <denistsoi@gmail.com>
-
-## License
-
-MIT
+### Author
+Denis Tsoi <denis.tsoi@gmail.com>

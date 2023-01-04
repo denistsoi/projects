@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h1 > span {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  @apply text-2xl;
+  @apply font-bold;
+  @apply py-4;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+p,
+span,
+ul,
+ol,
+li {
+  @apply py-2;
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  @apply list-disc;
+  @apply pl-4;
+}
+
+.image-container > img {
+  margin: 0 auto;
+  height: 100px;
+}
