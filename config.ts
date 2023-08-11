@@ -61,10 +61,6 @@ export const Config: Partial<Config> = {
       name: "Anjali Kelkar",
       linkedin: "https://www.linkedin.com/in/anjali-kelkar-12b28b/",
     },
-    {
-      name: "Aarohi Narain",
-      linkedin: "https://www.linkedin.com/in/aarohi-narain/",
-    },
     { name: "Denis Tsoi", linkedin: "https://www.linkedin.com/in/denistsoi/" },
   ],
 
