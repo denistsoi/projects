@@ -1,4 +1,30 @@
-export const Config = {
+type People = {
+  name: string;
+  imageUrl: string;
+  role: string;
+}
+
+type Image = {
+  name: string;
+  filename: string;
+}
+
+type Config = {
+  title: string;
+  description: string;
+  footer: string;
+  alt: {
+    logoName: string;
+  }
+  links: [any];
+  founder: any;
+  volunteers: { name: string, linkedin: string }[];
+  people: People[];
+  partners: Image[];
+  networks: Image[];
+}
+
+export const Config: Partial<Config> = {
   title: "Grassroots Future",
   description: "Grassroots Future is a registered charity in Hong Kong which came out of a desire to help refugee-led initiatives and grassroots organizations working with refugees build capacity.",
 
@@ -16,7 +42,9 @@ export const Config = {
     },
   ],
 
-  people: [],
+  people: [
+    { name: "Carmen Wong", imageUrl: "profiles/carmen-wong.jpeg", role: "Projects Officer" }
+  ],
 
   founder: {
     name: "Tegan Smyth",
@@ -38,8 +66,6 @@ export const Config = {
       linkedin: "https://www.linkedin.com/in/aarohi-narain/",
     },
     { name: "Denis Tsoi", linkedin: "https://www.linkedin.com/in/denistsoi/" },
-    { name: "Phoebe So", linkedin: "https://www.linkedin.com/in/phoebeso/" },
-    { name: "Carmen Wong", linkedin: "" },
   ],
 
   partners: [
