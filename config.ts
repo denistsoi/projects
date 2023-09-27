@@ -16,7 +16,7 @@ type Config = {
   alt: {
     logoName: string;
   }
-  links: [any];
+  links: { href: string, text: string }[];
   founder: any;
   volunteers: { name: string, linkedin: string }[];
   people: People[];

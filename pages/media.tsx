@@ -6,7 +6,7 @@ import { NotionRenderer } from 'react-notion-x'
 import { Layout } from "@components/Layout"
 import { MetaHead } from "@components/MetaHead"
 
-export default function Home({ recordMap }) {
+export default function Media({ recordMap }) {
   return (
     <>
       <MetaHead />
