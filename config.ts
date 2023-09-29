@@ -22,6 +22,8 @@ type Config = {
   people: People[];
   partners: Image[];
   networks: Image[];
+
+  media: any;
 }
 
 export const Config: Partial<Config> = {
@@ -77,5 +79,25 @@ export const Config: Partial<Config> = {
       name: "Asia Pacific Refugee Rights Network",
       filename: "asia-pacific-refugee-rights-network.png",
     },
-  ]
+  ],
+
+
+  media: {
+    logos: {
+      dark: [
+        "Dark_Chromatic_logo.png",                   
+        "Dark_TransparentBg_Chomatic_logo.png",      
+        "Dark_TransparentBg_logo.png",       
+        "Dark_logo.png",
+        // "Dark_TransparentBg_Chromatic_No_logo.png",  
+      ],
+      light: [
+        "Light_TransparentBg_Chromatic_logo.png",
+        "Light_TransparentBg_logo.png",
+        "Light_logo.png",
+        // "Light_No_Logo.png",
+        // "Light_TransparentBg_Chromatic_No_logo.png",
+      ]
+    }
+  }
 }
