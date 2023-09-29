@@ -2,8 +2,6 @@ import { ContentContainer } from "@components/ContentContainer";
 import Image from "next/image";
 
 export const LogoRenderer = ({ logos }) => {
-  console.log(logos)
-
   return (
     <ContentContainer>
       <div className="flex flex-wrap">
