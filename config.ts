@@ -55,7 +55,7 @@ export const Config: Partial<Config> = {
     role: "Director",
     bio: [
       "Tegan is a legally-trained Compliance professional with 8+ years of experience in private practice and global financial institutions in sanctions, AML/KYC, and project management. Her interest in refugee issues stems from her days training as a lawyer, which involved working for a community legal centre in Australia that focussed on providing civil law advice to refugees and new migrants.",
-      "As the Founder and CEO of Grassroots Future, she is involved in donation drives for refugee and asylum seeker communities, as well developing well-being, education and outreach initiatives to bridge gaps across communities.",
+      "As the Founder of Grassroots Future, she is involved in donation drives for refugee and asylum seeker communities, as well developing well-being, education and outreach initiatives to bridge gaps across communities.",
     ],
     imageUrl: "./profiles/tegan.jpeg",
   },
