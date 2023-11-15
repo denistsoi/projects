@@ -370,7 +370,8 @@ export default function Home() {
                   <div className="flex flex-full border-4 hover:border-blue-500 mr-4" key={index}>
                     <a href={report.href}>
                       <p className="text-blue-500 underline text-center py-4">{report.text}</p>
-                      <img src={report.image} height={300} width={211} />
+                      
+                      <img className="hover:-translate-y-2 transition" src={report.image} height={300} width={211} />
                     </a>
                   </div>
                 ))}
