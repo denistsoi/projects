@@ -316,7 +316,7 @@ export default function Home() {
                           {person.imageUrl ? (
                             <div className="mb-2 rounded-full md:rounded-none aspect-h-2 aspect-w-2 h-60 w-60 overflow-hidden md:overflow-auto md:w-full md:h-full">   
                               <img
-                                className="rounded-full md:w-full md:h-full md:object-cover shadow-lg md:rounded-lg"
+                                className="rounded-full md:w-full md:h-full lg:h-96 md:object-cover shadow-lg md:rounded-lg"     
                                 src={person?.imageUrl}
                                 alt=""
                               />
@@ -360,6 +360,21 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Annual Reports */}
+            <div className="">
+              <h1>Annual Reports</h1>
+              <div className="flex">
+                {Config.reports.map((report, index) => (
+                  <div className="flex flex-full border-4 hover:border-blue-500 mr-4" key={index}>
+                    <a href={report.href}>
+                      <p className="text-blue-500 underline text-center py-4">{report.text}</p>
+                      <img src={report.image} height={300} width={211} />
+                    </a>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
         </main>

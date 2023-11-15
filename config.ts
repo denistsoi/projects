@@ -22,6 +22,7 @@ type Config = {
   people: People[];
   partners: Image[];
   networks: Image[];
+  reports: any[]
 
   media: any;
 }
@@ -41,11 +42,12 @@ export const Config: Partial<Config> = {
     {
       href: "media",
       text: "Media"
-    },
+    }
   ],
 
   people: [
-    { name: "Carmen Wong", imageUrl: "profiles/carmen-wong.jpeg", role: "Projects Officer" }
+    { name: "Carmen Wong", imageUrl: "profiles/carmen-wong.jpeg", role: "Projects Officer" },
+    { name: "Briar Armani", imageUrl: "profiles/briar.jpeg", role: "Events Officer" }
   ],
 
   founder: {
@@ -99,5 +101,18 @@ export const Config: Partial<Config> = {
         // "Light_TransparentBg_Chromatic_No_logo.png",
       ]
     }
-  }
+  },
+
+  reports: [
+    { 
+      href: "https://issuu.com/grassrootsfuture/docs/grassroots_future_annual_report_2022_final_", 
+      text: "2021",
+      image: "/reports/2021_annual_report.png"
+    },
+    { 
+      href: "https://issuu.com/grassrootsfuture/docs/gf_2021_annual_report_4_", 
+      text: "2022",
+      image: "/reports/2022_annual_report.png"
+    }
+  ]
 }
