@@ -32,7 +32,7 @@ export default function Media({ recordMap, logos }) {
 
 export async function getStaticProps () {
   const notion = new NotionAPI()
-  const recordMap = await notion.getPage('62040807f1af4f808d18c51a0f6efa23')
+  const recordMap = await notion.getPage('155de4bad6914e01b8ce65e8801c9415')
   const logos = Config.media.logos
 
   return {
