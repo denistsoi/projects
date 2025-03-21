@@ -1,11 +1,9 @@
 {
   "name": "grassroots",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "private": true,
-  "engines": {
-    "node": "^20.x"
-  },
   "scripts": {
+    "open-graph": "node --loader ts-node/esm ./scripts/fetchMediaLinksOpenGraph.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -16,19 +14,21 @@
     "@headlessui/react": "^1.1.1",
     "@heroicons/react": "^1.0.1",
     "contentful": "^8.1.7",
-    "next": "^13.0.1",
+    "next": "^15.2.3",
     "notion-client": "^4.14.1",
-    "react": "^18.0.1",
-    "react-dom": "^18.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-notion-x": "^6.15.7"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
-    "@types/node": "^14.14.10",
+    "@notionhq/client": "^2.2.14",
+    "@types/node": "^14.18.63",
     "@types/react": "^17.0.0",
     "autoprefixer": "^10.0.4",
+    "open-graph-scraper": "^6.3.3",
     "postcss": "^8.1.10",
     "tailwindcss": "^3.1.6",
-    "typescript": "^4.4.2"
+    "typescript": "^4.9.5"
   }
 }
