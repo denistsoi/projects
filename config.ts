@@ -46,7 +46,6 @@ export const Config: Partial<Config> = {
   ],
 
   people: [
-    { name: "Carmen Wong", imageUrl: "profiles/carmen-wong.jpeg", role: "Projects Officer" },
     { name: "Briar Armani", imageUrl: "profiles/briar.jpeg", role: "Events Officer" }
   ],
 
