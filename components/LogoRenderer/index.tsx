@@ -5,9 +5,10 @@ export const LogoRenderer = ({ logos }) => {
   return (
     <ContentContainer>
       <div className="flex flex-wrap">
-        {logos.dark.map(logo => {
+        {logos.dark.map((logo, index) => {
           return (
             <Image 
+              key={`dark-${index}`}
               className="border-2 bg-black border-black m-1 flex-1"
               alt=""
               src={"/logos/" + logo} 
@@ -21,9 +22,10 @@ export const LogoRenderer = ({ logos }) => {
         }
       </div>
       <div className="flex flex-wrap">
-        {logos.light.map(logo => {
+        {logos.light.map((logo, index) => {
           return (
             <Image 
+              key={`light-${index}`}
               className="border-2 bg-white border-black m-1 flex-1"
               alt=""
               src={"/logos/" + logo} 
