@@ -33,7 +33,7 @@ export const Config: Partial<Config> = {
 
   footer:
     "Grassroots Future is a charitable institution under section 88 of the Inland Revenue Ordinance with No. 91/17131",
-  
+
   alt: {
     logoName: "Grassroots Future logo",
   },
@@ -87,30 +87,27 @@ export const Config: Partial<Config> = {
   media: {
     logos: {
       dark: [
-        "Dark_Chromatic_logo.png",                   
-        "Dark_TransparentBg_Chomatic_logo.png",      
-        "Dark_TransparentBg_logo.png",       
+        "Dark_Chromatic_logo.png",
+        "Dark_TransparentBg_Chomatic_logo.png",
+        "Dark_TransparentBg_logo.png",
         "Dark_logo.png",
-        // "Dark_TransparentBg_Chromatic_No_logo.png",  
       ],
       light: [
         "Light_TransparentBg_Chromatic_logo.png",
         "Light_TransparentBg_logo.png",
         "Light_logo.png",
-        // "Light_No_Logo.png",
-        // "Light_TransparentBg_Chromatic_No_logo.png",
       ]
     }
   },
 
   reports: [
-    { 
-      href: "https://issuu.com/grassrootsfuture/docs/grassroots_future_annual_report_2022_final_", 
+    {
+      href: "https://issuu.com/grassrootsfuture/docs/grassroots_future_annual_report_2022_final_",
       text: "2021",
       image: "/reports/2021_annual_report.png"
     },
-    { 
-      href: "https://issuu.com/grassrootsfuture/docs/gf_2021_annual_report_4_", 
+    {
+      href: "https://issuu.com/grassrootsfuture/docs/gf_2021_annual_report_4_",
       text: "2022",
       image: "/reports/2022_annual_report.png"
     }

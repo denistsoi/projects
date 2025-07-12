@@ -1,10 +1,10 @@
 {
   "name": "grassroots",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "private": true,
   "scripts": {
-    "open-graph": "node --loader ts-node/esm ./scripts/fetchMediaLinksOpenGraph.ts",
-    "dev": "next dev",
+    "fill-missing-opengraph": "tsx scripts/fill-missing-opengraph.ts",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start"
   },
@@ -13,22 +13,31 @@
     "@contentful/rich-text-react-renderer": "^15.16.2",
     "@headlessui/react": "^1.1.1",
     "@heroicons/react": "^1.0.1",
+    "clsx": "^2.1.1",
     "contentful": "^8.1.7",
     "next": "^15.2.3",
     "notion-client": "^4.14.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-notion-x": "^6.15.7"
+    "react-notion-x": "^6.15.7",
+    "tailwind-merge": "^3.3.1",
+    "tsx": "^4.20.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
-    "@notionhq/client": "^2.2.14",
+    "@notionhq/client": "^2.2.4",
     "@types/node": "^14.18.63",
     "@types/react": "^17.0.0",
     "autoprefixer": "^10.0.4",
-    "open-graph-scraper": "^6.3.3",
+    "open-graph-scraper": "^7.7.6",
     "postcss": "^8.1.10",
     "tailwindcss": "^3.1.6",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "metascraper": "^5.25.7",
+    "metascraper-title": "^5.25.7",
+    "metascraper-description": "^5.25.7",
+    "metascraper-image": "^5.25.7",
+    "metascraper-date": "^5.25.7",
+    "dotenv": "^16.4.5"
   }
 }
