@@ -12,7 +12,7 @@ import cooking from "../public/hero/DSF1996.webp"
 import spread from "../public/hero/DSCF8788.webp"
 import welfare from "../public/hero/welfare-infographic.png"
 import { Donation } from "@components/Donation"
-import { RaiselyLink } from "@components/Donation/RaiselyLink"
+import { DonationLink } from "@/components/Donation/DonationLink"
 
 const { founder, networks, people, volunteers } = Config
 
